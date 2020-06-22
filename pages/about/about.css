@@ -146,6 +146,7 @@ header .main-head {
 .parent-box{
     margin-top: 100px;
 }
+
 .child-containers{
     display: flex;
     flex-direction: row;
@@ -156,6 +157,7 @@ header .main-head {
     margin: 100px auto;
     overflow: hidden;
 }
+
 .child-containers .img-box{
     width: 50%;
     height: 100%;
@@ -169,36 +171,36 @@ header .main-head {
 }
 .child-containers .text-box p{
     font-size: 18px;
-    color: rgb(43, 42, 42);
+    color: rgb(83, 83, 83);
     text-align: justify;
     width: 100%;
     height: 100%;
     padding: 10px;
 }
 
+
 .child-containers .img-box img{
-    height: 100%;
+    width: 100%;
 }
 #what-we-do .img-box img{
-position: relative;
-left: -130px;
+
 }
+
 #about-owner{
-    height: 500px;
+    height: 600px;
 }
 
 
 .heading{
-    display: block;
-    padding: 0;
-    padding-bottom: 50px;
+    padding: 30px 0px;
     font-weight: lighter;
     color: rgb(61, 60, 60);
     width: 100%;
-    height: 50px;
+    height: 100px;
     text-align: center;
     font-size: 30px;
-    letter-spacing: 5px;}
+    letter-spacing: 5px;
+}
 
 
 

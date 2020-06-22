@@ -3,7 +3,11 @@
     padding: 0%;
     font-family: 'Merriweather Sans', sans-serif;
 }
-
+body{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
 .container {
     width:80%;
     padding: 0%;
@@ -13,7 +17,6 @@
     overflow: hidden;
     
 }
-
 /* ---header--- */
 header {
     
@@ -76,80 +79,28 @@ header li:active{
 }
 
 
-   
-
-
 /* --header end-- */
 
-
-/* ---main front image---- */
-.main-img { 
-
-    width: 100%;
-    background-image: url('../../images/bbbb.jpg');
-    background-size: cover;
-    object-fit: cover;
-    background-position: -420px 0px;
-    
-    
+section.main-img{
+width: 100%;
+background-image: url(../../images/bbbb.jpg);
+background-repeat: no-repeat;
+background-position: -300px 0px ;
 }
 
 .main-img-text {
-        width: 700px;
-    height: 160px;
-    overflow: hidden;
-    position: relative;
-margin-top: 50px;
-margin-left: 450px;
+width: 700px;
+height: 150px;
+box-sizing: border-box;
+overflow: hidden;
+position: relative;
+left: 500px;
 color: white;
-
-    
-   
-   
 }
+
 .main-img h1 {
-    font-size: 80px;
+font-size: 80px;
 }
-
-
-
-
-
-/* ----spliter--- */
-#splliter{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-}
-#spliter-box{
-padding-top:20px ;
-
-width: 300px;
-height: 70px;
-background-color: rgb(255, 255, 255);
-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-text-align: center;
-flex-grow: 1;
-}
-
-.spliter h1{
-color: rgb(0, 160, 253);
-font-family:monospace sans-serif;
-font-weight: lighter;
-
-font-size: 16px;
-}
-.spliter h3{
-color: rgb(61, 61, 61);
-font-family: monospace sans-serif;
-font-weight: lighter;
-font-size: 15px;
-}
-
-
-
-
-/* --splitter end---- */
 
 /* order-section */
 
@@ -161,7 +112,6 @@ font-size: 15px;
 
 
 .order-section .order-form{
-    z-index: 1;
     width: 800px;
     height: 100%;
     margin-top: 200px;
@@ -290,120 +240,155 @@ form select option{
 
 /* order-section-end */
 
-
+/* ----spliter--- */
+#splliter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    #spliter-box{
+    padding-top:20px ;
+    
+    width: 300px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex-grow: 1;
+    }
+    
+    .spliter h1{
+    color: rgb(0, 160, 253);
+    font-family:monospace sans-serif;
+    font-weight: lighter;
+    
+    font-size: 16px;
+    }
+    .spliter h3{
+    color: rgb(61, 61, 61);
+    font-family: monospace sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    }
+    
+    
+    
+    
+    /* --splitter end---- */
 
 /* before footer bar */
 .before-footer-bar{
-width: 100%;
-height: 50px;
-background-color:#79d70f;
-box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.315) ;
-}
-
-
-
-/* --footer-- */
-
-.footer-bar .flex-container{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap-reverse;
-}
-
-.footer-bar .flex-container > div{
-width: 270px;
-height: 295px;
-
-
-}
-
-.footer-bar{
-
-background-color: #272424;
-width: 100%;
-height: 100%;
-
-}
-
-.footer-img{
-width: 270px;
-height: 200px;
-
-}
-
-.footer-img img{
-float: right;
-margin: 10px 20px;    
-height: 120px;
-
-}
-
-/* newsletter */
-.newsletter{
-width: 270px;
-height: 40px;
-margin-top: 20px;
-
-} 
-
-.newsletter input{
-border: none;
-outline: none;
-box-sizing: border-box;
-padding: 5px;
-border-radius: 5px 0px 0px 5px;
-float: left;
-width: 180px;
-height: 40px;
-color: rgb(126, 125, 125);
-background-color: rgb(226, 223, 223);
-
-}
-
-button{
-color: white;
-border-radius: 0px 5px 5px 0px ;
-background-color:#79d70f;
-text-transform: uppercase;
-border: none;
-float: left;
-width: 90px;
-height: 40px;
-}
-
-.footer-bar .flex-container ul{
-color: rgb(100, 100, 100);
-font-size: 14px;
-line-height: 20px;
-
-} 
-.footer-bar .flex-container ul i{
-color: #7ad70f91;
-}
-.footer-bar .flex-container ul li{
-list-style: none;
-color: rgb(121, 119, 119);
-padding: 10px;
-font-size: 14px;
-}
-.footer-bar .flex-container ul li:hover{
-color: #79d70f;
-}
-.footer-bar .flex-container ul h4{
-font-size: 18px;
-color: #79d70f;
-padding: 20px 0px;
-}
-.copyright{
-width: 100%;
-height: 100%;
-padding: 5px 0px;
-background-color: rgb(48, 48, 48);
-text-align: start;
-color: rgb(104, 103, 103);
-font-size: 14px;
-font-weight: lighter;
-}
-.copyright p{
-margin-left:130px ;
-}
+    width: 100%;
+    height: 50px;
+    background-color:#79d70f;
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.315) ;
+    }
+    
+    
+    
+    /* --footer-- */
+    .footer-bar{
+        
+        box-sizing: border-box;
+        background-color: #272424;
+        width: 100%;
+        height: 100%;
+        
+        }
+    
+    .footer-bar .flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    }
+    
+    .footer-bar .flex-container > div{
+    width: 270px;
+    height: 295px;
+    }
+    
+    
+    
+    .footer-img{
+    width: 270px;
+    height: 200px;
+    
+    }
+    
+    .footer-img img{
+    float: right;
+    margin: 10px 20px;    
+    height: 120px;
+    
+    }
+    
+    /* newsletter */
+    .newsletter{
+    width: 270px;
+    height: 40px;
+    margin-top: 20px;
+    
+    } 
+    
+    .newsletter input{
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;
+    float: left;
+    width: 180px;
+    height: 40px;
+    color: rgb(126, 125, 125);
+    background-color: rgb(226, 223, 223);
+    
+    }
+    
+    button{
+    color: white;
+    border-radius: 0px 5px 5px 0px ;
+    background-color:#79d70f;
+    text-transform: uppercase;
+    border: none;
+    float: left;
+    width: 90px;
+    height: 40px;
+    }
+    
+    .footer-bar .flex-container ul{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    line-height: 20px;
+    
+    } 
+    .footer-bar .flex-container ul i{
+    color: #7ad70f91;
+    }
+    .footer-bar .flex-container ul li{
+    list-style: none;
+    color: rgb(121, 119, 119);
+    padding: 10px;
+    font-size: 14px;
+    }
+    .footer-bar .flex-container ul li:hover{
+    color: #aadb72;
+    }
+    .footer-bar .flex-container ul h4{
+    font-size: 18px;
+    color: #9be04d;
+    padding: 20px 0px;
+    }
+    .copyright{
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 5px 0px;
+    background-color: rgb(48, 48, 48);
+    text-align: start;
+    color: rgb(104, 103, 103);
+    font-size: 14px;
+    font-weight: lighter;
+    }
+    .copyright p{
+    margin-left:130px ;
+    }

@@ -70,6 +70,8 @@ header .main-head {
     position: initial;
     height:760px;
     background-image: url('../../images/1111.jpg');
+    transform: scaleX(-1);
+    filter: FlipH;
     top: 100px;
     background-size: cover;
     object-fit: cover;
@@ -84,7 +86,8 @@ header .main-head {
 
 /* contact-form */
 .contact-form{
-        margin: 150px auto;
+        transform: scaleX(-1);
+        margin: 200px auto;
         padding: 0%;
         width: 100%;
         height: 500px;
@@ -97,24 +100,27 @@ header .main-head {
     width: 70%;
     height: 500px;
     border-radius: 0px 15px 15px 0px;
-    background-color: #ffffff;
+    background-color: #272424ce;
     padding: 0;
 }
 .form-part p{
     text-align: start;
-    padding: 0px 10px;
-    color:#7ad70f ;
+    padding: 10px 20px;
+    color:#87d82a ;
     font-size: 3vw;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     
 
 }
-form{
+form {
     display: flex;
     flex-wrap: wrap;
     padding: 40px 10px;
-    color: black;
+    color:#ffffff;
+}
+input, textarea{
+    color: white;
 }
 .rest-part{
     width: 30%;
@@ -131,7 +137,7 @@ form .submit{
     background-color: #79d70f;
     color: white;
     border-radius: 25px;
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px 10px;
     margin-left: auto;
     margin-right: 25px;
@@ -143,7 +149,7 @@ input{
     width: 40%;
     height: 40px;
     margin: 10px auto;
-    background-color: rgba(61, 61, 61, 0.267);
+    background-color: #2724248e;
     border: none;
     border-left: 3px solid #79d70f;
     margin-left: 10px;
@@ -156,7 +162,7 @@ form textarea{
     margin: 10px 10px;
     resize: none;
     outline: none;
-    background-color: rgb(160, 158, 158);
+    background-color: #272424ce;
     border: none;
     border-left:3px solid #79d70f;
     padding: 10px;
@@ -205,11 +211,10 @@ form textarea{
         }
         #spliter-box{
             padding-top:20px ;
-            
             width: 300px;
             height: 70px;
             background-color: rgb(255, 255, 255);
-            box-shadow: 0px 10px 10px 0px rgb(226, 226, 226);
+
             text-align: center;
             flex-grow: 1;
         }
@@ -234,11 +239,32 @@ form textarea{
         /* --splitter end---- */
         
 /* map section */
-
 .map{
-    width: 100%;
-    height: 500px;
+    overflow: hidden;
 }
+.map iframe{
+    border-top: 5px solid rgba(94, 93, 93, 0.767);
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+    
+}
+.map .text{
+    box-sizing: border-box;
+    padding: 50px 80px;
+    position: relative;
+    left: -50px;
+    bottom: 0px;
+    width: 1500px;
+    height: 250px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.295);
+    color: rgba(74, 135, 216, 0.705);
+}
+
+
 /* map section end */
 
 
